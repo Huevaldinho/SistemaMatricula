@@ -16,7 +16,7 @@ function Header_MainPage() {
       </div>
       <div>
         <h2 className="text-white font-bold text-center">
-          Hora: {hora} Fecha:{fecha.getDay() + 1}/{fecha.getMonth() + 1}/
+          Hora: {hora} Fecha: {fecha.getDay() + 1}/{fecha.getMonth() + 1}/
           {fecha.getFullYear()}
         </h2>
       </div>
