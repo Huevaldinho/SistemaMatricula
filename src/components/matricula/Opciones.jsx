@@ -2,9 +2,16 @@ import { HiDotsVertical, HiChevronDown } from "react-icons/hi";
 function Opciones() {
   const handleSubmit = (e) => {
     e.preventDefault();
-    //Cada opcion tiene un handleSubmit diferente porque
-    //cada una invoca un componente diferente.
+    /*
+      Cada opcion tiene un handleSubmit diferente porque
+    cada una invoca un componente diferente. Sin embargo,
+    las opciones crean un componente Modal.
 
+    
+      La parte del cuerpo de la matricula solo
+    muestra los cursos disponibles segun la matricula que se 
+    haya seleccionado.    
+    */
     console.log("Se ha seleccionado: " + e.target.value);
   };
 
