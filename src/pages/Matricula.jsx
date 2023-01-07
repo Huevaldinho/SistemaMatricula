@@ -1,8 +1,8 @@
-import Opciones from "../components/matricula/opciones";
+import Header_Matricula from "../components/matricula/Header_Matricula";
 function Matricula() {
   return (
     <div>
-      <Opciones></Opciones>
+      <Header_Matricula />
     </div>
   );
 }

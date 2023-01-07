@@ -1,7 +1,5 @@
-import LogoTec from "../../assets/LogoTec.png";
 import { useState, useEffect } from "react";
-import FechaHora from "../componentesCompartidos/FechaHora";
-function Header_MainPage() {
+function FechaHora() {
   let fecha = new Date();
   //Estado para cambiar la hora en la UI
   const [hora, sethora] = useState(new Date().toLocaleTimeString("es-CR"));
@@ -11,13 +9,13 @@ function Header_MainPage() {
   }, []);
 
   return (
-    <div className="text-white bg-[#005085] grid grid-cols-3 gap-3 p-5">
-      <div>
-        <img src={LogoTec} alt="Logo" />
-      </div>
-      <FechaHora/>
+    <div>
+      <h2 className="text-white font-bold text-center">
+        Hora: {hora} Fecha: {fecha.getDay() + 1}/{fecha.getMonth() + 1}/
+        {fecha.getFullYear()}
+      </h2>
     </div>
   );
 }
 
-export default Header_MainPage;
+export default FechaHora;
