@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 function FechaHora() {
   let fecha = new Date();
+
   //Estado para cambiar la hora en la UI
   const [hora, sethora] = useState(new Date().toLocaleTimeString("es-CR"));
   //Efecto para actualizar el estado de la hora cada segundo
@@ -9,10 +10,14 @@ function FechaHora() {
   }, []);
 
   return (
-    <div>
-      <h2 className="text-white font-bold text-center">
-        Hora: {hora} Fecha: {fecha.getDay() + 1}/{fecha.getMonth() + 1}/
-        {fecha.getFullYear()}
+    <div className="font-light">
+      <h2 className="text-white  text-center">
+        Hora: <span className="font-bold">{hora} &nbsp;&nbsp;&nbsp;&nbsp;</span>
+        Fecha:
+        <span className="font-bold">
+          {" "}
+          {fecha.getDay() + 1}/{fecha.getMonth() + 1}/{fecha.getFullYear()}
+        </span>
       </h2>
     </div>
   );
