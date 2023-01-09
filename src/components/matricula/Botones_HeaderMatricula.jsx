@@ -20,9 +20,9 @@ function Botones_HeaderMatricula() {
   };
   return (
     //Botones matricula
-    <div className="grid grid-cols-3 w-72 text-center">
+    <div className="grid grid-cols-3 w-72 h-auto pt-1 pb-1">
       {/*Mi Horario */}
-      <div className="hover:bg-blue-900 text-center">
+      <div className="hover:bg-blue-900 hover:rounded-xl text-center h-16">
         <button className="  text-white " onClick={handleClickMiHorario}>
           <FaCalendarAlt size={30} />
           Mi Horario
@@ -30,7 +30,7 @@ function Botones_HeaderMatricula() {
       </div>
 
       {/*Mi Informe */}
-      <div className="hover:bg-blue-900 text-center">
+      <div className="hover:bg-blue-900 hover:rounded-xl text-center h-16">
         <button className=" text-white" onClick={handleClickMiInforme}>
           <HiOutlineNewspaper size={30} />
           Mi Informe
@@ -38,7 +38,7 @@ function Botones_HeaderMatricula() {
       </div>
 
       {/*Salir */}
-      <div className="hover:bg-blue-900 text-center">
+      <div className="hover:bg-blue-900 hover:rounded-xl text-center h-16">
         <button className=" text-white " onClick={handleSalir}>
           <AiOutlineArrowRight size={30} />
           Salir

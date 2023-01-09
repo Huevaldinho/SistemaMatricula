@@ -1,5 +1,4 @@
-import { HiDotsVertical, HiChevronDown } from "react-icons/hi";
-function Opciones() {
+export function Opciones() {
   const handleSubmit = (e) => {
     e.preventDefault();
     /*
@@ -16,10 +15,10 @@ function Opciones() {
   };
 
   return (
-    <div className="relative w-full lg:max-w-sm">
+    <div id="opciones" className="h-auto">
       <select
         name="opciones"
-        className="w-full p-2 text-gray-600 bg-white border-2 border-slate-500 rounded-md shadow-sm outline-none appearance-none focus:border-indigo-600"
+        className="p-1 text-gray-600 text-sm bg-white border-2 border-slate-500 rounded-md shadow-sm outline-none appearance-none focus:border-indigo-600"
       >
         <option onClick={handleSubmit}>Matrículas Disponibles</option>
         <option>Mi Historial Académico</option>
