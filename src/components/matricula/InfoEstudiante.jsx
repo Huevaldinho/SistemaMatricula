@@ -5,7 +5,7 @@ function InfoEstudiante() {
   const { estudiante } = useContext(ContextoEstudiante); //To list all tasks on the context
 
   return (
-    <div id="infoEstudiante" className="flex mb-1">
+    <div id="infoEstudiante" className="flex ">
       <div id="divFoto" className=" bg-gray-400 h-20 w-20">
         <img
           id="foto"

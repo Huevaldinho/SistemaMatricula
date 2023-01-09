@@ -10,7 +10,7 @@ function FechaHora() {
   }, []);
 
   return (
-    <div className="font-light" id='fechaHora'>
+    <div className="flex items-center justify-center font-light" id='fechaHora'>
       <h2 className="text-white  text-center">
         Hora: <span className="font-bold">{hora} &nbsp;&nbsp;&nbsp;&nbsp;</span>
         Fecha:
