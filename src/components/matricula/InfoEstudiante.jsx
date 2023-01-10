@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { ContextoEstudiante } from "../../contexts/ContextoEstudiante";
 import { Opciones } from "./Opciones";
 function InfoEstudiante() {
-  const { estudiante } = useContext(ContextoEstudiante); //To list all tasks on the context
+  const { estudiante } = useContext(ContextoEstudiante);
 
   return (
     <div id="infoEstudiante" className="flex ">

@@ -6,7 +6,7 @@ function Login() {
   //"Usuario no válido, solamente @estudiantec.cr"
   const [loginIncorrecto, setLoginIncorrecto] = useState("");
 
-  let tryLoginAPI = false;//Usar API para iniciar sesion. False muestra alerta | True redirecciona a /matricula.
+  let tryLoginAPI = false; //Usar API para iniciar sesion. False muestra alerta | True redirecciona a /matricula.
   const navigate = useNavigate();
 
   const handleSubmit = (e) => {
@@ -15,13 +15,14 @@ function Login() {
     //redux-react-session es una opcion para mantener la sesion del usuario.
     //al parecer es compatible con react-router
 
-
     //Despues de autenticarse, redirigir a pantalla matricula
     //Si no se logro autenticar, se debe mostrar alerta.
     tryLoginAPI
       ? navigate("/matricula")
-      : (alert("No se ha podido iniciar sesion. Usuario no válido, solamente @estudiantec.cr"),
-        setLoginIncorrecto("Usuario no válido, solamente @estudiantec.cr"));
+      : (setLoginIncorrecto("Usuario no válido, solamente @estudiantec.cr"),
+        alert(
+          "No se ha podido iniciar sesion. Usuario no válido, solamente @estudiantec.cr"
+        ));
   };
   return (
     <div className="bg-slate-50 min-h-screen flex flex-col">

@@ -52,7 +52,7 @@ export function contactosAdminRegistro() {
     },
     {
       sede: "Centro Académico San José",
-      codigo:540,
+      codigo: 540,
       contactos: [
         {
           puesto: "Oficina Admisión y Registro",
@@ -70,7 +70,7 @@ export function contactosAdminRegistro() {
     },
     {
       sede: "Centro Académico Limón",
-      codigo:300,
+      codigo: 300,
       contactos: [
         {
           puesto: "Oficina Admisión y Registro",
@@ -82,7 +82,7 @@ export function contactosAdminRegistro() {
     },
     {
       sede: "Sede Interunivesitaria de Alajuela",
-      codigo:100,
+      codigo: 100,
       contactos: [
         {
           puesto: "Oficina Admisión y Registro",
@@ -93,4 +93,32 @@ export function contactosAdminRegistro() {
       ],
     },
   ];
+}
+export function matriculasDisponibles() {
+  return [
+    {
+      modalidad: "Semestre",
+      periodo: 1,
+      tipo: "Primer Ingreso con cambio de carrera",
+      inicio: "19 ene. 2023 08:00",
+      fin: "19 ene. 2023 15:30",
+    },
+    {
+      modalidad: "Semestre",
+      periodo: 1,
+      tipo: "Ordinaria",
+      inicio: "30 ene. 2023 08:00",
+      fin: "31 ene. 2023 12:00",
+    },
+    {
+      modalidad: "Semestre",
+      periodo: 1,
+      tipo: "ExtraOrdinaria",
+      inicio: "02 feb. 2023 08:00",
+      fin: "02 feb. 2023 12:00",
+    },
+  ];
+}
+export function pedirHistorialAcademico() {
+  return [];
 }
