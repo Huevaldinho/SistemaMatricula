@@ -3,6 +3,7 @@ import { useState } from "react";
 
 function TablaContactos({ fila }) {
     const [estadoTabla,setEstadoTabla] = useState(false);
+    
   return (
     <>
       <button
@@ -19,7 +20,7 @@ function TablaContactos({ fila }) {
         className="text-sm text-left text-gray-500 dark:text-gray-400"
       >
         <tbody className={!estadoTabla?'hidden':null}>
-          <FilasContactos fila={fila} />
+          <FilasContactos  fila={fila} />
         </tbody>
       </table>
     </>

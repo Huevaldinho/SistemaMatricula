@@ -1,4 +1,3 @@
-import { AiOutlineMail } from "react-icons/ai";
 import ContactosAdmisionRegistro from "./ContactosAdmisionRegistro";
 function Footer_MainPage() {
   //Preguntar version en contexto o api.

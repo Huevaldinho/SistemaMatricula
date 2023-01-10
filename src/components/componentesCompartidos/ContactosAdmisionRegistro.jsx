@@ -53,11 +53,10 @@ export default function ContactosAdmisionRegistro() {
                 {/*body*/}
                 <div
                   id="bodyModal"
-                  className="relative p-6 flex-auto overflow-scroll"
+                  className="relative p-6 flex-auto"
                 >
                   {contactos.map((sede) => (
                     <>
-                    
                       <TablaContactos key={sede.codigo} fila={sede} />
                       <br/>
                     </>
