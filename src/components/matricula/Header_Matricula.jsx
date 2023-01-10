@@ -1,7 +1,6 @@
 import FechaHora from "../componentesCompartidos/FechaHora";
 import Botones_HeaderMatricula from "./Botones_HeaderMatricula";
 import InfoEstudiante from "./InfoEstudiante";
-import { Opciones } from "./Opciones";
 
 function Header_Matricula() {
   return (
