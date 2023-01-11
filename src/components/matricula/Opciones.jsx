@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { ContextoOpciones } from "../../contexts/ContextoOpciones";
-import MatriculaDiponible from "./MatriculaDisponible";
+import ModalMatriculaDiponible from "./ModalMatriculaDisponible";
 
 export function Opciones() {
   const { modalMatricula,handleModalMatricula } = useContext(ContextoOpciones);
@@ -23,7 +23,7 @@ export function Opciones() {
         <option>Código de PIN</option>
         <option>Ayuda</option>
       </select>
-      {modalMatricula ? <MatriculaDiponible /> : null}
+      {modalMatricula ? <ModalMatriculaDiponible /> : null}
     </div>
   );
 }

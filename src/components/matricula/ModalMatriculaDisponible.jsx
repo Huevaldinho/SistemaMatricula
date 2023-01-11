@@ -7,7 +7,7 @@ import {
 } from "../../data/datos";
 import TablaMatriculas from "./TablaMatriculas";
 
-function MatriculaDisponible() {
+function ModalMatriculaDisponible() {
   const { handleModalMatricula } = useContext(ContextoOpciones);
   let matriculas = [];
 
@@ -84,4 +84,4 @@ function MatriculaDisponible() {
   );
 }
 
-export default MatriculaDisponible;
+export default ModalMatriculaDisponible;
