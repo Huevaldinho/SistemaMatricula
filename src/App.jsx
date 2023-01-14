@@ -4,7 +4,7 @@ import { ContextoOpcionesProvider } from "./contexts/ContextoOpciones";
 
 function App() {
   return (
-    <div className="App">
+    <div id='app' className="App">
       <ContextoEstudianteProvider id="contextoEstudiante">
         <ContextoOpcionesProvider id="contextoOpciones">
           {/*Enrutador de las paginas.*/}

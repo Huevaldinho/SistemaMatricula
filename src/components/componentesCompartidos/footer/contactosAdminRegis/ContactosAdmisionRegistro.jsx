@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import TablaContactos from "./TablaContactos";
-import { contactosAdminRegistro } from "../../data/datos";
+import { contactosAdminRegistro } from "../../../../data/datos";
 
-export default function ContactosAdmisionRegistro() {
+ function ContactosAdmisionRegistro() {
   const [showModal, setShowModal] = useState(false);
   const contactos = contactosAdminRegistro();
 
@@ -82,3 +82,5 @@ export default function ContactosAdmisionRegistro() {
     </div>
   );
 }
+
+export default ContactosAdmisionRegistro;

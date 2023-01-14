@@ -1,12 +1,12 @@
-import Footer_MainPage from "../components/componentesCompartidos/Footer";
-import Header_MainPage from "../components/auth/Header_MainPage";
-import Login from "../components/auth/Login";
+import Footer from "../components/componentesCompartidos/footer/Footer";
+import Header_MainPage from "../components/mainPage/Header_MainPage";
+import Login from "../components/mainPage/Login";
 export default function MainPage() {
   return (
-    <div className="bg-white h-screen">
+    <div id="mainPage" className="relative">
       <Header_MainPage />
       <Login />
-      <Footer_MainPage />
+      <Footer />
     </div>
   );
 }

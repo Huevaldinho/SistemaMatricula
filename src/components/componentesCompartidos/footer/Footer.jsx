@@ -1,22 +1,22 @@
-import ContactosAdmisionRegistro from "./ContactosAdmisionRegistro";
-function Footer_MainPage() {
+import ContactosAdmisionRegistro from "./contactosAdminRegis/ContactosAdmisionRegistro";
+//Footer de todas las paginas.
+function Footer() {
   //Preguntar version en contexto o api.
   const version = "v1";
   const fecha = new Date();
 
   return (
-    //
-    <div
+    <footer
       id="footer"
-      className="bg-slate-50 grid grid-cols-3 gap-3 p-5 border-2 border-zinc-300"
+      className="flex flex-1 bottom-0 right-0 left-0  grid-cols-3 gap-3 p-4 border-2 border-zinc-300"
     >
       <ContactosAdmisionRegistro />
 
       <div className="text-gray-500 text-center">
         DATIC - Tecnológico de Costa Rica - {version}- © {fecha.getFullYear()}
       </div>
-    </div>
+    </footer>
   );
 }
 
-export default Footer_MainPage;
+export default Footer;

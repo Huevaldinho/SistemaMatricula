@@ -1,6 +1,6 @@
 import { useContext } from "react";
-import { ContextoOpciones } from "../../contexts/ContextoOpciones";
-import ModalMatriculaDiponible from "./ModalMatriculaDisponible";
+import { ContextoOpciones } from "../../../contexts/ContextoOpciones";
+import ModalMatriculaDiponible from "../opciones_modales/matriculasDisponibles/ModalMatriculaDisponible";
 
 export function Opciones() {
   const { modalMatricula,handleModalMatricula } = useContext(ContextoOpciones);

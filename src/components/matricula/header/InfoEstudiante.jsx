@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { ContextoEstudiante } from "../../contexts/ContextoEstudiante";
+import { ContextoEstudiante } from "../../../contexts/ContextoEstudiante";
 import { Opciones } from "./Opciones";
 function InfoEstudiante() {
   const { estudiante } = useContext(ContextoEstudiante);

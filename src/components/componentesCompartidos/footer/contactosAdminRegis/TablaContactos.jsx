@@ -2,7 +2,7 @@ import FilasContactos from "./FilasContactos";
 import { useState } from "react";
 
 function TablaContactos({ fila }) {
-  //Estado para mostrar el cuerpo de la tabla.
+  //Estado para mostrar el cuerpo de la tabla de contactos de admision y registro
 
   const [estadoTabla, setEstadoTabla] = useState(false);
 

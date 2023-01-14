@@ -1,5 +1,5 @@
 import FilasTablaMatriculas from "./FilasTablaMatriculas";
-import HeadTableMatriculas from "./HeadTableMatriculas";
+import HeadTableMatriculas from "./HeadTablaMatriculas";
 
 function TablaMatriculas({ matriculas }) {
   //Si el arreglo de matriculas es diferente de [] es porque

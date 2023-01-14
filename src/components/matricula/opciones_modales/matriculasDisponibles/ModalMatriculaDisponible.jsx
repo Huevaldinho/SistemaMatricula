@@ -1,10 +1,10 @@
 import { useContext } from "react";
 import { AiOutlineClose } from "react-icons/ai";
-import { ContextoOpciones } from "../../contexts/ContextoOpciones";
+import { ContextoOpciones } from "../../../../contexts/ContextoOpciones";
 import {
   matriculasDisponibles,
   pedirHistorialAcademico,
-} from "../../data/datos";
+} from "../../../../data/datos";
 import TablaMatriculas from "./TablaMatriculas";
 
 function ModalMatriculaDisponible() {
@@ -82,6 +82,6 @@ function ModalMatriculaDisponible() {
       <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
     </>
   );
-}
+} 
 
 export default ModalMatriculaDisponible;
