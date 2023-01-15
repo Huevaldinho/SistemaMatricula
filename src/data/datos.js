@@ -102,6 +102,26 @@ export function matriculasDisponibles() {
       tipo: "Primer Ingreso con cambio de carrera",
       inicio: "19 ene. 2023 08:00",
       fin: "19 ene. 2023 15:30",
+      cursos: [
+        {
+          nombre: "SEMINARIO DE ESTUDIOS FILOSOFICOS HISTORICOS",
+          codigo: "CS3401",
+          creditos: 2,
+          grupo: null, //debe cambiar guarndo se selecciona.
+          grupos: [
+            {
+              sede: "CAMPUS TECNOLOGICO CENTRAL CARTAGO",
+              grupo: 1,
+              horario: "L 09:30-12:20",
+              aula: "F4-08",
+              profesor: "CASASOLA RIVERA WILMER",
+              cupo: 25,
+              reservado: false,
+              estado: "Regular",
+            },
+          ],
+        },
+      ],
     },
     {
       modalidad: "Semestre",
@@ -109,6 +129,7 @@ export function matriculasDisponibles() {
       tipo: "Ordinaria",
       inicio: "30 ene. 2023 08:00",
       fin: "31 ene. 2023 12:00",
+      cursos: [{ nombre: "Comunicación Escrita" }],
     },
     {
       modalidad: "Semestre",
@@ -116,6 +137,7 @@ export function matriculasDisponibles() {
       tipo: "ExtraOrdinaria",
       inicio: "02 feb. 2023 08:00",
       fin: "02 feb. 2023 12:00",
+      cursos: [{ nombre: "Cálculo Diferencial e Integral" }],
     },
   ];
 }

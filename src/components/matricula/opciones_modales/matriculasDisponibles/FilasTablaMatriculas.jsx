@@ -1,10 +1,21 @@
 import { IoInformationCircle } from "react-icons/io5";
+import { useContext } from "react";
+import ContextoOpciones from "../../../../contexts/ContextoOpciones";
 
 function FilasTablaMatriculas({ matriculas }) {
-  const handleClick=(e)=>{
-    e.preventDefault()
-    console.log('Mostrar matricula')
-  }
+  const { handleMatricula } = useContext(ContextoOpciones);
+  const handleClick = (e, fila) => {
+    e.preventDefault();
+
+    /**
+     * Llama a la funcion del contexto opciones encargada
+     * de guardar la matricula seleccionada
+     * porque en el body de la matricula se tienen que mostrar
+     * los cursos disponibles.
+     *
+     */
+    handleMatricula(fila);
+  };
   return matriculas.map((fila, index) => (
     <tr
       key={index}
@@ -15,8 +26,12 @@ function FilasTablaMatriculas({ matriculas }) {
       <td className="px-6 py-4">{fila.tipo}</td>
       <td className="px-6 py-4">{fila.inicio}</td>
       <td className="px-6 py-4">{fila.fin}</td>
-      <td className="px-6 py-4" onClick={handleClick}>
-        <IoInformationCircle className="hover:cursor-pointer" size={30} color="#3779dd" />
+      <td className="px-6 py-4" onClick={(e) => handleClick(e, fila)}>
+        <IoInformationCircle
+          className="hover:cursor-pointer"
+          size={30}
+          color="#3779dd"
+        />
       </td>
     </tr>
   ));
