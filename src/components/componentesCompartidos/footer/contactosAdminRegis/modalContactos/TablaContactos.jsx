@@ -13,13 +13,15 @@ function TablaContactos({ fila }) {
         data-dropdown-toggle="tabla"
         className="text-black text-center inline-flex items-center "
         type="button"
-        onClick={(e) => setEstadoTabla(!estadoTabla)}
+        onClick={(e) => {
+          e.preventDefault(), setEstadoTabla(!estadoTabla);
+        }}
       >
         {fila.sede}
       </button>
 
       <table
-        id="tabla"
+        id={fila.sede}
         className="text-sm text-left text-gray-500 dark:text-gray-400"
       >
         {/*Si no se ha seleccionado la sede (boton) se esconde el cuerpo de la tabla. */}

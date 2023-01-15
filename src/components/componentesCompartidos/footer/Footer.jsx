@@ -10,6 +10,7 @@ function Footer() {
       id="footer"
       className="flex flex-1 bottom-0 right-0 left-0  grid-cols-3 gap-3 p-4 border-2 border-zinc-300"
     >
+      {/*Modal contactos */}
       <ContactosAdmisionRegistro />
 
       <div className="text-gray-500 text-center">
