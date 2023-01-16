@@ -3,9 +3,13 @@ import { useContext } from "react";
 import ContextoOpciones from "../../../../contexts/ContextoOpciones";
 
 function FilasTablaMatriculas({ matriculas }) {
-  const { handleMatricula } = useContext(ContextoOpciones);
+  const { handleMatricula, handleModalMatricula } =
+    useContext(ContextoOpciones);
+
   const handleClick = (e, fila) => {
     e.preventDefault();
+    //Cierra el modal de matriculas disponibles.
+    handleModalMatricula();
 
     /**
      * Llama a la funcion del contexto opciones encargada

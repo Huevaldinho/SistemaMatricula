@@ -1,8 +1,10 @@
 import FechaHora from "../../componentesCompartidos/header/FechaHora";
 import Botones_HeaderMatricula from "./Botones_HeaderMatricula";
+import CitaAsignada from "./CitaAsignada";
 import InfoEstudiante from "./InfoEstudiante";
 
 function Header_Matricula() {
+  
   return (
     //Header Matricula
     <header
@@ -12,7 +14,11 @@ function Header_Matricula() {
       {/*Info estudiante*/}
       <InfoEstudiante />
       {/*Fecha y hora */}
+      <div className="text-center">
       <FechaHora />
+      <CitaAsignada/>
+      </div>
+      
       <Botones_HeaderMatricula />
     </header>
   );
