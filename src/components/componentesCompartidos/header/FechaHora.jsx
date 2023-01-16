@@ -10,14 +10,11 @@ function FechaHora() {
   }, []);
 
   return (
-    <div className="flex items-center justify-center font-light" id='fechaHora'>
+    <div className="flex items-center justify-center font-light" id="fechaHora">
       <h2 className="text-white  text-center">
-        Hora: <span className="font-bold">{hora} &nbsp;&nbsp;&nbsp;&nbsp;</span>
+        Hora: <span className="font-bold whitespace-pre-wrap">{hora}         </span>
         Fecha:
-        <span className="font-bold">
-          {" "}
-          {fecha.getDay() + 1}/{fecha.getMonth() + 1}/{fecha.getFullYear()}
-        </span>
+        <span className="font-bold "> {fecha.toLocaleDateString()}</span>
       </h2>
     </div>
   );

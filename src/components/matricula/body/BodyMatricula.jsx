@@ -1,6 +1,6 @@
 import { useContext, useState, useEffect } from "react";
 import ContextoOpciones from "../../../contexts/ContextoOpciones";
-import TablaCursos from "./TablaCursos";
+import TablaCursos from "./tablaCursos/TablaCursos";
 
 function BodyMatricula() {
   const {
@@ -16,11 +16,15 @@ function BodyMatricula() {
     console.log("Fin matricula:", getFinMatricula());
     console.log("Estoy en matricula:", citaMatricula);
   };
-  
+
   return (
-    <div className="container flex flex-col  min-h-screen  max-h-sm max-w-sm mx-auto items-center justify-center">
-      <h1>Sistema de Matrícula</h1>
-      
+    <div className="container flex flex-col  min-h-screen  max-h-sm max-w-sm mx-auto items-center justify-start">
+      <div>
+        <span className="text-black font-bold text-4xl">
+          Sistema de Matrícula
+        </span>
+      </div>
+
       <TablaCursos />
       <button className="bg-black text-white font-bold" onClick={handleClick}>
         CREAR TABLA DE CURSOS.
