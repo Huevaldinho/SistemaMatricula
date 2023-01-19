@@ -18,17 +18,18 @@ function BodyMatricula() {
   };
 
   return (
-    <div className="container flex flex-col  min-h-screen  max-h-sm max-w-sm mx-auto items-center justify-start">
-      <div>
+    <div
+      id="bodyMatricula"
+      className="container  min-h-screen  max-h-sm max-w-sm mx-auto items-center justify-start"
+    >
+      <>
         <span className="text-black font-bold text-4xl">
           Sistema de Matrícula
         </span>
-      </div>
+      </>
 
       <TablaCursos />
-      <button className="bg-black text-white font-bold" onClick={handleClick}>
-        CREAR TABLA DE CURSOS.
-      </button>
+ 
     </div>
   );
 }

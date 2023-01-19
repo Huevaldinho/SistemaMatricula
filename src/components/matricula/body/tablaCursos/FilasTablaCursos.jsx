@@ -10,11 +10,16 @@ function FilasTablaCursos() {
       </tr>
     );
   }
+  const handleDespliegue = (e) => {
+    e.preventDefault();
+    console.log("Desplegar grupos:",matriculaSeleccionada?.cursos);
+  };
   //En cada fila (curso) se debe crear una nueva tabla para mostrar los grupos.
   return matriculaSeleccionada?.cursos.map((curso, index) => (
     <tr
       key={index}
-      className="bg-white text-black border-b hover:bg-slate-600 hover:text-white"
+      className="w-fit bg-white text-black border-b hover:bg-slate-200 hover:text-black"
+      onClick={(e)=>{handleDespliegue(e)}}
     >
       <td className="px-6 py-4">{curso.nombre}</td>
       <td className="px-6 py-4">{curso.codigo}</td>

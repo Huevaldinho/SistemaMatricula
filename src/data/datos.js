@@ -113,8 +113,7 @@ export function matriculasDisponibles() {
             {
               sede: "CAMPUS TECNOLOGICO CENTRAL CARTAGO",
               grupo: 1,
-              horario: "L 09:30-12:20",
-              aula: "F4-08",
+              horarioAula: "L 09:30-12:20 F4-08",
               profesor: "CASASOLA RIVERA WILMER",
               cupo: 25,
               reservado: false,
@@ -123,8 +122,7 @@ export function matriculasDisponibles() {
             {
               sede: "CAMPUS TECNOLOGICO CENTRAL CARTAGO",
               grupo: 2,
-              horario: "M 09:30-12:20",
-              aula: "F4-09",
+              horarioAula: "M 09:30-12:20 F4-09",
               profesor: "CASASOLA RIVERA WILMER",
               cupo: 25,
               reservado: false,
@@ -133,8 +131,7 @@ export function matriculasDisponibles() {
             {
               sede: "CAMPUS TECNOLOGICO CENTRAL CARTAGO",
               grupo: 3,
-              horario: "V 09:30-12:20",
-              aula: "B2-03",
+              horarioAula: "V 09:30-12:20 B2-03",
               profesor: "FALLAS VARGAS FABRICIO",
               cupo: 25,
               reservado: false,
@@ -142,6 +139,42 @@ export function matriculasDisponibles() {
             },
           ],
         },
+        {
+          nombre: "ADMINISTRACION DE PROYECTOS",
+          codigo: "IC4810",
+          creditos: 4,
+          grupo: null,
+          grupos: [
+            {
+              sede: "CAMPUS TECNOLOGICO CENTRAL CARTAGO",
+              grupo: 1,
+              horarioAula: "K 07:30-09:20 B3-08 J 07:30-09:20 B3-08",
+              profesor: "ARROYO HERRERA MAURICIO",
+              cupo: 28,
+              reservado: false,
+              estado: "Semipresencial",
+            },
+            {
+              sede: "CAMPUS TECNOLOGICO CENTRAL CARTAGO",
+              grupo: 2,
+              horarioAula: "K 09:30-11:20 B3-07 J 09:30-11:20 B3-07",
+              profesor: "SOLANO SOTO JAIME",
+              cupo: 28,
+              reservado: false,
+              estado: "Regular",
+            },
+            {
+              sede: "CENTRO ACADEMICO DE ALAJUELA",
+              grupo: 20,
+              horarioAula:
+                "M 08:00-09:50 Aula No Disponible V 08:00-09:50 Aula No Disponible",
+              profesor: "LOPEZ VALERIO CYNTHIA",
+              cupo: 25,
+              reservado: false,
+              estado: "Regular",
+            },
+          ],
+        }
       ],
     },
     {
@@ -153,11 +186,42 @@ export function matriculasDisponibles() {
       horaMatricula: "10:10:00",
       cursos: [
         {
-          nombre: "Comunicación Escrita",
-          codigo: "CS4810",
+          nombre: "	SEMINARIO DE ESTUDIOS FILOSOFICOS HISTORICOS",
+          codigo: "CS3401",
           creditos: 2,
           grupo: null,
-          grupos: [],
+          grupos: [
+            {
+              sede: null,
+              grupo: null,
+              horario: null,
+              aula: null,
+              profesor: null,
+              cupo: null,
+              reservado: null,
+              estado: null,
+            },
+            {
+              sede: null,
+              grupo: null,
+              horario: null,
+              aula: null,
+              profesor: null,
+              cupo: null,
+              reservado: null,
+              estado: null,
+            },
+            {
+              sede: null,
+              grupo: null,
+              horario: null,
+              aula: null,
+              profesor: null,
+              cupo: null,
+              reservado: null,
+              estado: null,
+            },
+          ],
         },
       ],
     },
@@ -168,7 +232,7 @@ export function matriculasDisponibles() {
       inicio: "02/01/2023 08:00:00",
       fin: "02/01/2023 12:00:00",
       horaMatricula: "11:10:00",
-      cursos: [{ nombre: "Cálculo Diferencial e Integral" }],
+      cursos: [{ nombre: "ADMINISTRACION DE PROYECTOS" }],
     },
   ];
 }

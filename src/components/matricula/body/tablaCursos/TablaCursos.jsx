@@ -16,10 +16,10 @@ function TablaCursos() {
   }
   //Si hay cursos crea una tabla.
   return (
-    <div className="relative overflow-x-auto">
-      <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400 ">
+    <div className="relative w-fit">
+      <table className="text-center text-sm  text-gray-500 dark:text-gray-400 ">
         <HeadTablaCursos />
-        <tbody>
+        <tbody className="overscroll-contain">
           <FilasTablaCursos />
         </tbody>
       </table>

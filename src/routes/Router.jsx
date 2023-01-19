@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MainPage from "../pages/MainPage.jsx";
 import Matricula from "../pages/Matricula.jsx";
 import NotFound from "../pages/NotFound.jsx";
+import Pruebas from "../components/Pruebas.jsx";
 
 export function Router() {
   return (
@@ -12,6 +13,7 @@ export function Router() {
          */}
         <Route path="/" element={<MainPage />} />
         <Route path="/matricula" element={<Matricula />} />
+        <Route path="/pruebas" element={<Pruebas />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
