@@ -18,18 +18,14 @@ function BodyMatricula() {
   };
 
   return (
-    <div
-      id="bodyMatricula"
-      className="container  min-h-screen  max-h-sm max-w-sm mx-auto items-center justify-start"
-    >
+    <div id="bodyMatricula" className="container min-h-screen max-w-6xl text-center">
       <>
-        <span className="text-black font-bold text-4xl">
+        <span id="textoBodyMatricula" className="text-black font-bold text-4xl">
           Sistema de Matrícula
         </span>
       </>
 
       <TablaCursos />
- 
     </div>
   );
 }
