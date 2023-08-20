@@ -1,6 +1,4 @@
 # SistemaMatricula
-Replica del sistema de matricula del TEC.
+Replica del sistema de matricula del ITCR.
 
-Falta hacer que todo sea responsive.
-Falta eliminar el scrollbar vertical cuando no sea necesario.
-Falta back.
+Falta mil cosas que hacer.
